@@ -1,0 +1,350 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100vh;
+    background: rgb(156, 213, 231);
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview {
+
+    height: 400px;
+    width: 400px;
+    position: absolute;
+}
+
+
+.eye {
+    position: absolute;
+    height: 120px;
+    width: 90px;
+
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 15%;
+    border-bottom-right-radius: 50% 15%;
+    top: 50px
+}
+
+.eye.right {
+    position: absolute;
+    left: 50%;
+    margin-left: 90px;
+    transform: rotate(-5deg);
+    background: black;
+    overflow: hidden;
+
+}
+
+.eye.left {
+    position: absolute;
+    right: 50%;
+    margin-right: 90px;
+    transform: rotate(5deg);
+    background: black;
+    overflow: hidden;
+}
+
+.iris-right1 {
+    height: 100px;
+    width: 70px;
+    background: black;
+    position: absolute;
+    right: 10px;
+    border-radius: 50%;
+    transform: rotate(3deg);
+    z-index: 1;
+}
+
+.iris-left1 {
+    height: 100px;
+    width: 70px;
+    background: black;
+    position: absolute;
+    left: 7px;
+    border-radius: 50%;
+    transform: rotate(17deg);
+    z-index: 1;
+}
+
+.iris-right2 {
+    height: 80px;
+    width: 80px;
+    background: rgb(125, 41, 35);
+    position: absolute;
+    right: 4px;
+    border-radius: 50%;
+    bottom: -17px;
+
+}
+
+.iris-left2 {
+    height: 80px;
+    width: 80px;
+    background: rgb(125, 41, 35);
+    position: absolute;
+    left: 11px;
+    border-radius: 50%;
+    bottom: -13px;
+
+}
+
+.iris-right3 {
+    height: 60px;
+    width: 45px;
+    background: white;
+    position: absolute;
+    left: 9px;
+    border-radius: 50%;
+    top: 0px;
+    transform: rotate(27deg);
+    z-index: 2;
+}
+
+.iris-left3 {
+    height: 60px;
+    width: 45px;
+    background: white;
+    position: absolute;
+    right: 42px;
+    border-radius: 50%;
+    top: -4px;
+    transform: rotate(36deg);
+    z-index: 2;
+}
+
+.iris-right4 {
+    height: 35px;
+    width: 8px;
+    background: white;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 2;
+    bottom: 3px;
+    right: 18px;
+    transform: rotate(-15deg)
+}
+
+.iris-left4 {
+    height: 32px;
+    width: 8px;
+    background: white;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 2;
+    bottom: 6px;
+    right: 18px;
+    transform: rotate(-25deg)
+}
+
+.iris-right5 {
+    height: 10px;
+    width: 4px;
+    background: white;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 2;
+    bottom: 8px;
+    right: 30px;
+    transform: rotate(-15deg)
+}
+
+.iris-left5 {
+    height: 10px;
+    width: 4px;
+    background: white;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 2;
+    bottom: 8px;
+    right: 30px;
+    transform: rotate(-25deg)
+}
+
+
+.nose-left {
+    height: 0px;
+    width: 15px;
+    border-style: solid;
+    border-color: rgb(44, 49, 42) transparent transparent transparent;
+    border-width: 1px;
+
+    transform: rotate(-38deg) translateX(20px);
+    left: 50%;
+    position: absolute;
+    bottom: 193px;
+}
+
+.nose-right {
+    height: 0px;
+    width: 15px;
+    border-style: solid;
+    border-color: rgb(44, 49, 42) transparent transparent transparent;
+    border-width: 1px;
+
+    transform: rotate(38deg) translateX(-20px);
+    right: 50%;
+    position: absolute;
+    bottom: 193px;
+}
+
+
+.mouse-top.left {
+    height: 10px;
+    width: 180px;
+    left: 20px;
+    position: absolute;
+    bottom: 175px;
+    border-top-left-radius: 75% 100%;
+    border-top-right-radius: 25% 100%;
+    background: rgb(76, 48, 47);
+    overflow: hidden;
+}
+
+.mouse-top.right {
+    height: 10px;
+    width: 180px;
+    right: 20px;
+    position: absolute;
+    bottom: 175px;
+    border-top-right-radius: 75% 100%;
+    border-top-left-radius: 25% 100%;
+    background: rgb(76, 48, 47);
+    overflow: hidden;
+
+}
+
+
+.mouse-bottom.left {
+    height: 70px;
+    width: 180px;
+    position: absolute;
+    bottom: 105px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 100%;
+    left: 20px;
+    background: rgb(76, 48, 47);
+    overflow: hidden;
+
+
+
+}
+
+.mouse-bottom.right {
+    height: 70px;
+    width: 180px;
+    position: absolute;
+    bottom: 105px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 100%;
+    right: 20px;
+    background: rgb(76, 48, 47);
+    overflow: hidden;
+
+}
+
+
+
+.tf {
+    height: 180px;
+    width: 300px;
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(190, 69, 58, 1);
+    left: 25px;
+    top: -62px;
+}
+
+.bf {
+    height: 180px;
+    width: 300px;
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(190, 69, 58, 1);
+    left: 25px;
+    top: -73px;
+    overflow: hidden;
+}
+
+.tr {
+    height: 180px;
+    width: 300px;
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(190, 69, 58, 1);
+    left: -153px;
+    top: -62px;
+}
+
+.br {
+    height: 180px;
+    width: 300px;
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(190, 69, 58, 1);
+    left: -153px;
+    top: -73px;
+}
+
+.sr {
+    height: 60px;
+    width: 113px;
+    background: rgb(247, 145, 140);
+    position: absolute;
+    right: 44px;
+    bottom: 37px;
+    border-bottom-right-radius: 60% 45%;
+    border-top-right-radius: 60% 55%;
+    border-bottom-left-radius: 1%;
+    border-top-left-radius: 40% 50%;
+}
+
+.sl {
+    height: 70px;
+    width: 180px;
+    background: rgb(247, 145, 140);
+    position: absolute;
+    bottom: 29px;
+    border-bottom-right-radius: 0%;
+    border-top-right-radius: 60% 55%;
+    border-bottom-left-radius: 1%;
+    border-top-left-radius: 40% 50%;
+}
+
+.brow-left {
+    position: absolute;
+    height: 10px;
+    width: 35px;
+    border: 1px solid;
+    border-color: black transparent transparent transparent;
+    border-radius: 50%;
+    transform: rotate(40deg);
+    left: 80px;
+    top: 45px
+}
+
+.brow-right {
+    position: absolute;
+    height: 10px;
+    width: 35px;
+    border: 1px solid;
+    border-color: black transparent transparent transparent;
+    border-radius: 50%;
+    transform: rotate(-40deg);
+    right: 80px;
+    top: 45px
+}
